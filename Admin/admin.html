@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="/Admin/admin.css">
+</head>
+<body>
+    <div class="Analytics-btn">
+        <input type="button" value="Analytics">
+    </div>
+    <div class="container">
+        <div class="header">
+            <h2>Add Car</h2>
+        </div>
+        <div class="form-container">
+            <form action="" class="car-add-form" id="form">
+                <div class="input-box">
+                    <span>Car Name</span>
+                    <input type="text" id="carNameInput" placeholder="Enter Car Name">
+                </div>
+                <div class="input-box">
+                    <span>Car Number</span>
+                    <input type="text" id="carNumberInput" placeholder="Enter Car Name">
+                </div>
+                <div class="input-box">
+                    <span>Car Rent/Day</span>
+                    <input type="text" id="carRentInput" placeholder="Enter Car">
+                </div>
+                <div class="input-box">
+                    <span>Type</span>
+                    <select name="type" id="typeInput">
+                        <option value="SUV">SUV</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="HatchBack">HatchBack</option>
+                        <option value="Truck">Truck</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span>Upload the photo of Car</span>
+                    <input type="file" id="picOfCar" placeholder="Upload the Photo of Car">
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="/Admin/connectDb.js"></script>
+<script src="/Admin/admin.js"></script>
+</html>

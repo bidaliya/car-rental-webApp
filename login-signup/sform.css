@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mulish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --myfont : 'Mulish', sans-serif;
+    --my-btn-font : 'Montserrat', sans-serif;
+    --lg-lightcolor: linear-gradient(to left, rgba(116, 235, 213, 0.6), rgba(159,172, 230, 0));
+
+    --lg-color :linear-gradient(to left, #74ebd5, #9face6)
+}
+
+body{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: var(--myfont);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: beige;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048) 0.12.px ;
+    overflow: hidden;
+    width: calc(100vw - 65vw);
+    max-width: 100%;
+}
+
+.header{
+    background:linear-gradient(#fe5b3d,#ffac38);
+    padding: 30px 0;
+}
+.header h2{
+    color:#474fa0 ;
+    font-family: var(--my-btn-font);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+
+}
+
+.form{
+    padding: 40px;
+    padding-bottom: 9px;
+}
+
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 12px;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color:#777;
+}
+
+#passwordDiv p{
+    display: block;
+    position: relative;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* display: none; */
+}
+
+#passwordDiv p.hidden{
+    display: none;
+}
+
+.validPass{
+    color: #2ecc71;
+}
+.invalidPass{
+    color: #e74c3c;
+}
+
+/* Now i will all a "success" class dyanmically using javascript which will confirm me that the corresponding form-control is correct */
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
+}
+
+/* both the i tags are on top of one another because the position is absolute */
+.form-control i {
+    position: absolute;
+    right: 8px;
+    top: 40px;
+    visibility: hidden;
+}
+
+/* When there is success, then we have to make the visibility of check vaala i tag to be visible and green */
+.form-control.success i.fa-circle-check{
+    color:#2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-circle-exclamation{
+    color:#e74c3c;
+    visibility: visible;
+}
+
+
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+.form .btn{
+    background: #474fa0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.already-have-account{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}

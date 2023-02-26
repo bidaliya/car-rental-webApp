@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Mulish&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --myfont : 'Mulish', sans-serif;
+    --my-btn-font : 'Montserrat', sans-serif;
+    --lg-lightcolor: linear-gradient(to left, rgba(116, 235, 213, 0.6), rgba(159,172, 230, 0));
+
+    --lg-color :linear-gradient(to left, #74ebd5, #9face6)
+}
+
+body .container{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: var(--myfont);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: beige;
+    margin-top: -80px;
+}
+
+.header{
+    /* background:linear-gradient(#fe5b3d,#ffac38); */
+    padding: 16px 0;
+}
+.header h2{
+    color:#474fa0 ;
+    font-family: var(--my-btn-font);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    border: 2px solid red;
+
+}
+
+.car-add-form{
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    bottom: 4rem;
+    left: 100px;
+    background: #FFF;
+    padding: 25px 0;
+    border-radius: 0.5rem;
+    width: 24rem;
+}
+
+.car-add-form .input-box{
+    display: flex;
+    flex-direction: column;   
+    gap: 4px; 
+    width: 20rem;
+}
+
+.input-box span{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.input-box input{
+    /* padding: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #f0f0f0;
+    background: #fff;
+    border-radius: 0.5rem;
+    font-size: 1rem; */
+
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    display: block;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 12px;
+}
+
+.input-box input:focus{
+    outline: 0;
+    border-color:#777;
+}
+
+.car-add-form .btn{
+    display: block;
+}
+
+.car-add-form .btn input{
+    background: #474fa0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 15px;
+    width: 13rem;
+}
+
+.Analytics-btn{
+    background-color: beige;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: end;
+    padding-right:57px;
+    padding-top: 32px;
+}
+
+.Analytics-btn input{
+    background: #474fa0;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-family: var(--my-btn-font);
+    font-size: 16px;
+    padding: 15px;
+    width: 13rem;
+}
+
+
+.car-add-form .btn input:hover{
+    background: #fe5b3d; 
+}

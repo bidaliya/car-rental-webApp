@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Car</title>
+</head>
+<body>
+
+    <div class="car-rent">
+        <div class="header">
+            <h2>Rent Details</h2>
+        </div>
+
+        <div class="form-container">
+            <form action="" class="form" id="form">
+                <div class="input-box">
+                    <span>Your Name</span>
+                    <input type="text" id="userNameInput" placeholder="Enter Your Name" required = true>
+                </div>
+                <div class="input-box">
+                    <span>Address</span>
+                    <input type="text" id="userAddressInput" placeholder="Enter Your Address" required = true>
+                </div>
+                <div class="input-box">
+                    <span>Time of Picking</span>
+                    <input type="datetime-local" id="dateOfInput" placeholder="Enter Date of Picking" required = true>
+                </div>
+                <div class="input-box">
+                    <span>Duration</span>
+                    <select name="duration" id="durationInput" required = true>
+                        <option value="hourly">Hourly</option>
+                        <option value="daily">Daily</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quaterly">Quaterly</option>
+                    </select>
+                </div>
+                
+                <div class="btn">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/Admin/connectDb.js"></script>
+<script src="/RentCar/rentCar.js"></script>
+<!-- <script src="/home.js"></script> -->
+</html>

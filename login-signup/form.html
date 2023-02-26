@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Angular Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.0/angular.min.js" 
+        integrity="sha512-M7xRXhk9w4nRi4DAb7uORHxVdPxDJojQiUVx48fiXXaUS+ceQNLo4/EUoxHHPw7qV3M1Uz/zh9JpgXxzU2v/Kg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JS script link -->
+    
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/login-signup/sform.css">
+    
+    <title>Registration Form</title>
+</head>
+<body >
+    <div id="main-page">
+        <div class="container" >
+            <div class="header">
+                <h2>Registration Form</h2>
+            </div>
+            <form action="get" class="form" id="form">
+                <!-- For username -->
+                <div class="form-control">
+                    <label> Username</label>
+                    <input type="text" name="" id="username" placeholder="Enter your Full Name"  >
+                    <i class="fa-solid fa-circle-check" style="color: rgb(146, 238, 8);"></i>
+                    <i class="fa-solid fa-circle-exclamation" style='color: red;'></i>
+                    <small>Error Msg</small>
+                </div>
+    
+                <!-- For Email -->
+                <div class="form-control">
+                    <label> Email</label>
+                    <input type="email" name="" id="email" placeholder="Enter your Email" >
+                    <i class="fa-solid fa-circle-check" style="color: rgb(146, 238, 8);"></i>
+                    <i class="fa-solid fa-circle-exclamation" style='color: red;'></i>
+                    <small>Error Msg</small>
+                </div>
+    
+                <!-- For Phone number -->
+                <div class="form-control">
+                    <label> Phone Number</label>
+                    <input type="number" name="" id="phone" placeholder="Enter your Phone Number" >
+                    <i class="fa-solid fa-circle-check" style="color: rgb(146, 238, 8);"></i>
+                    <i class="fa-solid fa-circle-exclamation" style='color: red;'></i>
+                    <small>Error Msg</small>
+                </div>
+    
+                <!-- For password -->
+                <div class="form-control" id="passwordDiv">
+                    <label> Password</label>
+                    <input type="text" name="" id="password" placeholder="Enter your Password" >
+                    <i class="fa-solid fa-circle-check" style="color: rgb(146, 238, 8);"></i>
+                    <i class="fa-solid fa-circle-exclamation" style='color: red;'></i>
+                    
+                    <p class="hidden" id="eightDigitPassValidation">Password should be of 8 digits</p>
+                    <p class="hidden" id="AteastOneLetterPassValidation">Password should contain atleast one letter</p>
+                    <p class="hidden" id="AteastOneNumPassValidation">Password should contain atleast 1 number</p>
+                </div>
+    
+                <!-- For confirm password -->
+                <div class="form-control">
+                    <label> Confirm Password</label>
+                    <input type="text" name="" id="cpassword" placeholder="Enter your Password again" >
+                    <i class="fa-solid fa-circle-check" style="color: rgb(146, 238, 8);"></i>
+                    <i class="fa-solid fa-circle-exclamation" style='color: red;'></i>
+                    <small>Error Msg</small>
+                </div>
+                <input type="submit" value="Submit" class="btn" name="">
+            </form>
+                <div class="already-have-account"  style="color: rgb(156, 19, 156);font-size: 19px; ">
+                   <a href="/login-signup/login2.html"  style="text-decoration: none; color: inherit;">
+                        Go to login &nbsp; 
+                        <span class="arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </a> 
+                </div> 
+            
+        </div>
+    </div>
+</body>
+
+<script src="/Admin/connectDb.js"></script>
+<script src="/login-signup/sform.js"></script>  
+</html>

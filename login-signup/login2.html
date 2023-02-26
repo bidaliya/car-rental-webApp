@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JS script link -->
+    
+    <!-- <script src="formAngular.js"></script> -->
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="/login-signup/login2.css">
+</head>
+<body>
+    <div id="main-page">
+        <div class="container" >
+            <div class="header">
+                <h2>Login Form</h2>
+            </div>
+            <form name="form" class="form" id="form" >
+                <!-- For username -->
+                <div class="form-control" >
+                    <label> Username/Email</label>
+                    <input type="text" id="usernameEmail" name="nameEmail" placeholder="Enter your Username/Email " required = "true"  >
+                    <i  class="fa-solid fa-circle-check " style="color: rgb(146, 238, 8);"></i>
+                    <i class="fa-solid fa-circle-exclamation" style='color: red;'></i>
+                    <p >Username Cannot be blank</p>
+                </div>
+        
+                <!-- For password -->
+                <div class="form-control" id="passwordDiv">
+                    <label> Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password" >
+                    <i  class="fa-solid fa-circle-check" style="color: rgb(146, 238, 8);"></i>
+                    <i  class="fa-solid fa-circle-exclamation" style='color: red;'></i>
+                    <p>Password Cannot be blank</p>
+                </div>
+                <input type="submit" value="Login" class="btn" name="submitBtn" ng-disabled = "form.nameEmail.$error.required || form.password.$error.required " ng-click = "submit()"
+                >
+            </form>
+    
+            <div class="already-have-account"  style="color: rgb(156, 19, 156);font-size: 19px;">
+                <a href="/login-signup/form.html" style="text-decoration: none; color: inherit;">
+                    Create an Account &nbsp; 
+                    <span class="arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </a>
+                
+            </div>
+    
+        </div>
+    </div>
+</body>
+<script src="/Admin/connectDb.js"></script>
+<script src="/login-signup/login2.js"></script>
+</html>
