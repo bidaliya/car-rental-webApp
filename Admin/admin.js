@@ -22,6 +22,7 @@ form.addEventListener('submit', (event)=>{
 function insertCar(car) {
     console.log("inside car");
     console.log(car);
+    
     // The first argument in db.transaction() is a list of object stores that the transaction will span.
     const insertTxn = db.transaction('Cars', "readwrite"); 
     const carStore = insertTxn.objectStore('Cars');

@@ -18,15 +18,15 @@
         let Userstore = database.createObjectStore('Users', {keyPath: "email" });
 
         Userstore.createIndex('email', 'email', {unique: false});
-        Userstore.createIndex('password', 'password', {unique: true});
-        Userstore.createIndex('name', 'name', {unique: false});
-        Userstore.createIndex('phone', 'phone', {unique: false});
+        // Userstore.createIndex('password', 'password', {unique: true});
+        // Userstore.createIndex('name', 'name', {unique: false});
+        // Userstore.createIndex('phone', 'phone', {unique: false});
 
         // Car store ->
         let carStore = database.createObjectStore('Cars', {keyPath: "carNumber" });
 
-        carStore.createIndex("carName", "carName", { unique: false });
-        carStore.createIndex("carRent", "carRent", { unique: false });
+        // carStore.createIndex("carName", "carName", { unique: false });
+        // carStore.createIndex("carRent", "carRent", { unique: false });
         carStore.createIndex("carNumber","carNumber", { unique:true });
         // on all stores created successfully
         console.log("Db is created");

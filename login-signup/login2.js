@@ -36,6 +36,7 @@ const password = document.getElementById('password');
 form.addEventListener('submit', (event)=>{
     event.preventDefault();
     console.log(usernameEmail.value.trim());
+    
     const txn = db.transaction('Users', 'readonly');
     const store = txn.objectStore('Users');
 
